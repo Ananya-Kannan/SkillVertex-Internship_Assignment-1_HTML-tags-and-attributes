@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+    <h2>Webpage with all HTML tags and attributes by Ananya Kannan</h2>
+    
+    <h4>1) The a tag: Defines a hyperlink.</h4>
+    <a href="https://www.microsoft.com/en-in">Visit Microsoft website</a>
+
+    <h4>2) The abbr tag: Defines an abbreviated form of a longer word or phrase.</h4>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <h4>3) The address tag: Specifies the author's contact information.</h4>
+    <address>
+        Written by <a href="ananya06082004@gmail.com">Ananya Kannan</a>.<br> 
+        Visit at:<br>
+        ananyakannan06082004@gmail.com<br>
+        H.NO.311, Krishi Vihar<br>
+        Hyderabad
+    </address>
+
+    <h4>4) The area tag: Defines a specific area within an image map.</h4>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Mobile_phone">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+    </map>
+    
+    <h4>5) The article tag: Defines an article.</h4>
+    <article>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+      </article>
+      
+      <article>
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+      </article>
+      
+      <article>
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+      </article>
+
+    <h4>6) The aside tag: Defines some content loosely related to the page content.</h4>
+    <p>My family and I visited The Taj Mahal this summer. The weather was good, and Taj mahal was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h5>Taj Mahal</h5>
+  <p>The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.</p>
+</aside>
+
+    <h4>7) The audio tag: Embeds a sound, or an audio stream in an HTML document.</h4>
+    <p>Click on the play button to play a sound:</p>
+
+<audio controls>
+  <source src="computer_game.wav" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+    <h4>8) The b tag: Displays text in a bold style.</h4>
+    <p>This is normal text - <b>and this is bold text</b>.</p>
+
+    <h4>9) The base tag: Defines the base URL for all relative URLs in a document.</h4>
+    <p><img src="Basic_human_drawing.png" width="24" height="39" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+<p><a href="https://www.tutorialspoint.com/html/html_base_tag.htm">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+    <h4>10) The bdi tag: Represents text that is isolated from its surrounding for the purposes of bidirectional text formatting.</h4>
+    <p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
+
+<ul>
+ <li>User <bdi>1</bdi>: 60 points</li>
+ <li>User <bdi>2</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+
+    <h4>11) The bdo tag: Overrides the current text direction.</h4>
+    <p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+
+    <h4>12) The blockquote tag: Represents a section that is quoted from another source.</h4>
+    <p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+    <h4>13) The body tag: Defines the document's body.</h4>
+    <body>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+      </body>
+
+    <h4>14) The br tag: Produces a single line break.</h4>
+    <p>This forces<br> line breaks<br> in a text</p>
+
+    <h4>15) The button tag: Creates a clickable button.</h4>
+    <button type="button" onclick="alert('Hello world!')">Click here!</button>
+
+    <h4>16) The canvas tag: Defines a region in the document, which can be used to draw graphics on the fly via scripting (usually JavaScript).</h4>
+    <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#ADD8E6";
+ctx.fillRect(0, 0, 80, 100);
+</script>
+
+    <h4>17) The caption tag: Defines the caption or title of the table.</h4>
+    <head>
+        <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <table>
+          <caption>Student Marks</caption>
+          <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Science</td>
+            <td>45</td>
+          </tr>
+        </table>
+
+    <h4>18) The cite tag: Indicates a citation or reference to another source.</h4>
+    <img src="scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+    <h4>19) The code tag: Specifies text as computer code.</h4>
+    <code>The CSS background-color property defines the background color of an element.</code>
+
+    <h4>20) The col tag: Defines attribute values for one or more columns in a table.</h4>
+    <table>
+        <colgroup>
+          <col span="2" style="background-color:rgb(213, 225, 231)">
+          <col style="background-color:rgb(146, 223, 245)">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>5869207</td>
+          <td>My first CSS</td>
+          <td>$45</td>
+        </tr>
+      </table>
+
+    <h4>21) The colgroup tag: Specifies attributes for multiple columns in a table.</h4>
+    <table>
+        <colgroup>
+          <col span="2" style="background-color:rgb(190, 244, 177)">
+          <col style="background-color:rgb(159, 159, 152)">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+        <tr>
+          <td>5869207</td>
+          <td>My first CSS</td>
+          <td>$49</td>
+        </tr>
+      </table>
+      
+
+    <h4>23) The data tag: Links a piece of content with a machine-readable translation.</h4>
+
+    <p>The following example displays product names but also associates each name with a number:</p>
+
+<ul>
+  <li><data value="21020">Hello</data></li>
+  <li><data value="21025">Everyone</data></li>
+</ul>
+
+
+    <h4>24) The datalist tag: Represents a set of pre-defined options for an input element.</h4>
+    <form action="/action_page.php" method="get">
+        <label for="browser">Choose browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+        </datalist>
+        <input type="submit">
+      </form>
+
+    <h4>25) The dd tag: Specifies a description, or value for the term (dt tag) in a description list (dl tag). </h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+      </dl>
+
+    <h4>26) The del tag: Represents text that has been deleted from the document.</h4>
+    <p>My favorite color is <del>Black</del>   <ins>blue</ins>!</p>
+
+
+    <h4>27) The details tag: Represents a widget from which the user can obtain additional information or controls on-demand.</h4>
+
+    <details>
+        <summary>Taj Mahal</summary>
+        <p>The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.</p>
+      </details>
+
+    <h4>28) The dfn tag: Specifies a definition.</h4>
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+    <h4>29) The dialog tag: Defines a dialog box or subwindow.</h4>
+    <p>This is text 1.</p>
+
+    <dialog open>This is an open dialog window</dialog>
+
+    <p>This is text 2.</p>
+
+    <p>This is text 3.</p>
+
+    <h4>30) The div tag: Specifies a division or a section in a document.</h4>
+    <head>
+        <style>
+        .myDiv {
+          border: 5px outset rgb(123, 103, 235);
+          background-color: lightblue;    
+          text-align: center;
+        }
+        </style>
+        </head>
+    <div class="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+      </div>
+      
+      <p>This is some text outside the div element.</p>
+
+    <h4>31) The dl tag: Defines a description list.</h4>
+
+    <p>These three elements are used to create a description list:</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+    <h4>32) The dt tag: Defines a term (an item) in a description list.</h4>
+
+    <p>These three elements are used to create a description list:</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+    <h4>33) The em tag: Defines emphasized text.</h4>
+    <p>You <em>have</em> to hurry up!</p>
+    <p>We <em>should</em> live like this.</p>
+
+    <h4>34) The embed tag: Embeds external application, typically multimedia content like audio or video into an HTML document.</h4>
+    <embed type="video/webm" src="video.mp4" width="400" height="300">
+
+    <h4>35) The fieldset tag: Specifies a set of related form fields.</h4>
+    <form action="/action_page.php">
+        <fieldset>
+         <legend>Personal Info form :</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br><br>
+         <label for="birthday">Birthday:</label>
+         <input type="date" id="birthday" name="birthday"><br><br>
+         <input type="submit" value="Submit">
+        </fieldset>
+       </form>
+
+    <h4>36) The figcaption tag: Defines a caption or legend for a figure.</h4>
+    <figure>
+        <img src="tajmahal.jpg" alt=TajMahal" style="width:20%">
+        <figcaption>Fig.1 - Taj Mahal</figcaption>
+      </figure>
+
+    <h4>37) The figure tag: Represents a figure illustrated as part of the document.</h4>
+    <img src="tajmahal.jpg" alt=TajMahal" style="width:20%">
+
+    <h4>38) The footer tag: Represents the footer of a document or a section.</h4>
+    <footer>
+        <p>Author: Ananya Kannan<br>
+        <a href="mailto:ananya06082004@gmail.com">ananya06082004@gmail.com</a></p>
+      </footer>
+
+    <h4>39) The form tag: Defines an HTML form for user input.</h4>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit form">
+      </form>
+      
+
+    <h4>40) The head tag: Defines the head portion of the document that contains information about the document such as title.</h4>
+    <head>
+        <title>Title of the document</title>
+    </head>
+
+    <h4>41) The header tag: Represents the header of a document or a section.</h4>
+    <header>
+        <h1>A heading here</h1>
+        <p>Posted by Ananya Kannan</p>
+        <p>Some information here..</p>
+    </header>
+
+    <h4>42) The hgroup tag: Defines a group of headings.</h4>
+    <hgroup>
+        <h1>This is the title.</h1>
+        <h2>This is sub-title.</h2>
+    </hgroup>
+
+    <h4>43) The h1 to h6 tags: Defines HTML headings.</h4>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <h4>44) The hr tag: Produce a horizontal line.</h4>
+
+    <h1>The Main Languages of the Web</h1>
+
+    <p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. </p>
+
+    <hr>
+
+    <p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. </p>
+
+    <hr>
+
+    <p>JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.</p>
+
+    <h4>45) The html tag: Defines the root of an HTML document.</h4>
+    <html lang="en">
+<head>
+  <title>Title of the document</title>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+    <h4>46) The i tag: Displays text in an italic style.</h4>
+    <p><i>Hello</i> Everyone. My name is <i>Ananya Kannan!</i></p>
+
+    <h4>47) The iframe tag: Displays a URL in an inline frame.</h4>
+    <iframe src="https://en.wikipedia.org/wiki/Computer" title="Wikipedia">
+    </iframe>
+
+    <h4>48) The img tag: Represents an image.</h4>
+    <img src="workplace.jpg" alt="Workplace" width="200" height="200">
+
+    <h4>49) The input tag: Defines an input control.</h4>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    <h4>50) The ins tag: Defines a block of text that has been inserted into a document.</h4>
+    <p>My favorite color is <del>black</del> <ins>blue</ins>!</p>
+
+    <h4>51) The kbd tag: Specifies text as keyboard input.</h4>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+    <h4>52) The keygen tag: Represents a control for generating a public-private key pair.</h4>
+    <form>
+        Username: <input type="text" name="uname">
+        <br><br>
+        Encryption: <keygen name="secure">
+        <input type="submit">
+    </form>
+
+    <h4>53) The label tag: Defines a label for an input control.</h4>
+    <p>Click on one of the text labels to toggle the related radio button:</p>
+
+<form action="/action_page.php">
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+    <h4>54) The legend tag: Defines a caption for a fieldset element.</h4>
+    <form action="/action_page.php">
+        <fieldset>
+         <legend>Personal info:</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br><br>
+         <label for="birthday">Birthday:</label>
+         <input type="date" id="birthday" name="birthday"><br><br>
+         <input type="submit" value="Submit">
+        </fieldset>
+       </form>
+       
+
+    <h4>55) The li tag: Defines a list item.</h4>
+    <p>The ol element defines an ordered list:</p>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <p>The ul element defines an unordered list:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+    <h4>56) The link tag: Defines the relationship between the current document and an external resource.</h4>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+      <p>The below text is in blue colour, due to css file</p>
+      <h1>Hello World!</h1>
+      
+
+    <h4>57) The main tag: Represents the main or dominant content of the document.</h4>
+    <main>
+        <h2>Most Popular Browsers</h2>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+      </main>
+
+    <h4>58) The map tag: Defines a client-side image-map.</h4>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Mobile_phone">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+    </map>
+
+    <h4>59) The mark tag: Represents text highlighted for reference purposes.</h4>
+    <p>Do not forget to finish your <mark>assignment</mark> today.</p>
+
+
+    <h4>60) The meta tag: Provides structured metadata about the document content.</h4>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML tags">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Ananya Kannan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+
+    <h4>61) The meter tag: Represents a scalar measurement within a known range.</h4>
+    <label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+
+    <h4>62) The nav tag: Defines a section of navigation links.</h4>
+    <nav>
+      <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> |
+      <a href="https://en.wikipedia.org/wiki/CSS">CSS</a> |
+      <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> |
+      <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>
+      </nav>
+
+    <h4>63) The noscript tag: Defines alternative content to display when the browser doesn't support scripting.</h4>
+    <script>
+      document.write("Hello World!")
+      </script>
+      <noscript>Sorry, your browser does not support JavaScript!</noscript>      
+
+    <h4>64) The object tag: Defines an embedded object.</h4>
+    <object data="tajmahal.jpg" width="300" height="200"></object>
+
+    <h4>65) The ol tag: Defines an ordered list.</h4>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+  </ol>
+
+    <h4>66) The optgroup tag: Defines a group of related options in a selection list.</h4>
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h4>67) The option tag: Defines an option in a selection list.</h4>
+    <label for="cars">Choose a car:</label>
+
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+
+    <h4>68) The output tag: Represents the result of a calculation.</h4>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50">
+      +<input type="number" id="b" value="25">
+      =<output name="x" for="a b"></output>
+      </form>
+      
+
+    <h4>69) The p tag: Defines a paragraph.</h4>
+    <p>This is some paragraph.</p>
+
+    <h4>70) The param tag: Defines a parameter for an object or applet element.</h4>
+    <object data="computer_game.wav">
+      <param name="autoplay" value="true">
+      </object>
+
+    <h4>71) The picture tag: Defines a container for multiple image sources.</h4>
+    <picture>
+      <source media="(min-width:650px)" srcset="tajmahal.jpg">
+      <source media="(min-width:465px)" srcset="Basic_human_drawing.png">
+      <img src="workplace.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <h4>72) The pre tag: Defines a block of preformatted text.</h4>
+    <pre>
+      Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+      </pre>
+
+    <h4>73) The progress tag: Represents the completion progress of a task.</h4>
+    <label for="file">Progress:</label>
+<progress id="file" value="76" max="100"> 76% </progress>
+
+    <h4>74) The q tag: Defines a short inline quotation.</h4>
+    <p>WWF's goal is to: 
+      <q>Build a future where people live in harmony with nature.</q>
+      We hope they succeed.</p>
+
+    <h4>75) The rp tag: Provides fall-back parenthesis for browsers that that don't support ruby annotations.</h4>
+    <ruby>
+      漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+      </ruby>
+
+    <h4>76) The rt tag: Defines the pronunciation of character presented in a ruby annotations.</h4>
+    <ruby>
+      漢 <rt> ㄏㄢˋ </rt>
+     </ruby>
+
+    <h4>77) The ruby tag: Represents a ruby annotation.</h4>
+    <ruby>
+      漢 <rt> ㄏㄢˋ </rt>
+     </ruby>
+
+    <h4>78) The s tag: Represents contents that are no longer accurate or no longer relevant.</h4>
+    <p><s>Only 30 tickets left!</s></p>
+<p>SORRY! SOLD OUT!</p>
+
+    <h4>79) The samp tag: Specifies text as sample output from a computer program.</h4>
+    <p><samp>File not found.<br>Press esc to exit</samp></p>
+
+    <h4>80) The script tag: Places script in the document for client-side processing.</h4>
+    <p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello!";
+</script> 
+
+    <h4>81) The section tag: Defines a section of a document, such as header, footer etc.</h4>
+    <section>
+      <h2>WWF History</h2>
+      <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+
+    <h4>82) The select tag: Defines a selection list within a form.</h4>
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h4>83) The small tag: Displays text in a smaller size.</h4>
+    <p>This is normal text.</p>
+<p><small>This is smaller text.</small></p>
+
+    <h4>84) The source tag: Defines alternative media resources for the media elements like audio tag or video tag.</h4>
+    <audio controls>
+      <source src="computer_game.wav" type="audio/ogg">
+      <source src="computer_game.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h4>85) The span tag: Defines an inline styleless section in a document.</h4>
+    <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:rgb(84, 3, 24);font-weight:bold">brown </span> eyes.</p>
+
+    <h4>86) The strong tag: Indicate strongly emphasized text.</h4>
+    <p>This text is normal.</p>
+
+    <p><strong>This text is important!</strong></p>
+
+    <h4>87) The style tag: Inserts style information (commonly CSS) into the head of a document.</h4>
+    <head>
+      <style>
+      h1 {color:rgb(19, 19, 19);}
+      p {color:rgb(77, 2, 19);}
+      </style>
+      </head>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+    <h4>88) The sub tag: Defines subscripted text.</h4>
+    <p>This text contains <sub>subscript</sub> text.</p>
+
+    <h4>89) The summary tag: Defines a summary for the details element.</h4>
+    <details>
+      <summary>Taj Mahal</summary>
+      <p>The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.</p>
+    </details>
+
+    <h4>90) The sup tag: Defines superscripted text.</h4>
+    <p>This text contains <sup>superscript</sup> text.</p>
+
+    <h4>91) The svg tag: Embed SVG (Scalable Vector Graphics) content in an HTML document.</h4>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="green" />
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <h4>92) The table tag: Defines a data table.</h4>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Math</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>45</td>
+      </tr>
+    </table>
+
+    <h4>93) The tbody tag: Groups a set of rows defining the main body of the table data.</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>Rs120</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>Rs60</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>Rs180</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h4>94) The td tag: Defines a cell in a table.</h4>
+    <table>
+      <tr>
+        <td>Approx</td>
+        <td>Best</td>
+      </tr>
+      <tr>
+        <td>Canteen</td>
+        <td>Demon</td>
+      </tr>
+    </table>
+
+    <h4>95) The template tag: Defines the fragments of HTML that should be hidden when the page is loaded, but can be cloned and inserted in the document by JavaScript.</h4>
+    <button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Workplace</h2>
+  <img src="workplace.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+    <h4>96) The textarea tag: Defines a multi-line text input control (text area).</h4>
+    <form action="/action_page.php">
+      <p><label for="review">Review:</label></p>
+      <textarea id="review" name="review" rows="4" cols="50">A computer is a machine that can be programmed to carry out sequences of arithmetic or logical operations (computation) automatically. Modern digital electronic computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. </textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h4>97) The tfoot tag: Groups a set of rows summarizing the columns of the table.</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>Rs120</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>Rs60</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>Rs180</td>
+        </tr>
+      </tfoot>
+    </table>
+    
+
+    <h4>98) The th tag: Defines a header cell in a table.</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>Rs120</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>Rs60</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>Rs180</td>
+        </tr>
+      </tfoot>
+    </table>
+    
+
+    <h4>99) The thead tag: Groups a set of rows that describes the column labels of a table.</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>Rs120</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>Rs60</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>Rs180</td>
+        </tr>
+      </tfoot>
+    </table>
+    
+
+    <h4>100) The time tag: Represents a time and/or date.</h4>
+    <p>Open from <time>10:30</time> to <time>22:30</time> every weekday.</p>
+
+    <p>I have a meeting on <time datetime="2008-02-16 20:00">Monday</time>.</p>
+
+
+    <h4>101) The title tag: Defines a title for the document.</h4>
+    <head>
+      <title>HTML tags</title>
+    </head>
+
+    <h4>102) The tr tag: Defines a row of cells in a table.</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>Rs120</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>Rs60</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>Rs180</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h4>103) The u tag: Displays text with an underline.</h4>
+    <p>This is some <u>random</u> text.</p>
+
+    <h4>104) The ul tag: Defines an unordered list.</h4>
+    <ul>
+      <li>Pizza</li>
+      <li>Burger</li>
+      <li>Pasta</li>
+    </ul>
+    
+    <h4>105) The var tag: Defines a variable.</h4>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+    <h4>106) The video tag: Embeds video content in an HTML document.</h4>
+    <video width="320" height="240" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+
+    <h4>107) The wbr tag: Represents a line break opportunity.</h4>
+    <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+
+
+</html>
